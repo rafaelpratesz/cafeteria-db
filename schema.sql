@@ -13,15 +13,3 @@ CREATE TABLE pedidos (
     cliente VARCHAR(100),
     FOREIGN KEY (produto_id) REFERENCES produtos(id)
 );
-
--- Inserir produtos
-INSERT INTO produtos (nome, preco, estoque) VALUES
-('Café Espresso', 6.00, 50),
-('Pão de Queijo', 4.00, 100),
-('Capuccino', 8.50, 30);
-
--- Inserir pedidos
-INSERT INTO pedidos (data, produto_id, quantidade, cliente) VALUES
-('2025-07-12 10:15:00', 1, 2, 'Ana Paula'),
-('2025-07-12 10:30:00', 2, 4, 'Carlos Silva'),
-('2025-07-12 11:00:00', 3, 1, 'Bruno Souza');
