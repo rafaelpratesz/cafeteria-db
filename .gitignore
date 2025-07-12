@@ -1,0 +1,15 @@
+
+---
+
+## **.gitignore**
+
+```gitignore
+# Ignorar arquivos de banco de dados gerados
+*.db
+*.sqlite
+*.sqlite3
+*.bak
+
+# Arquivos temporários e de sistema
+.DS_Store
+Thumbs.db
